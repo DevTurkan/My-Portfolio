@@ -1,0 +1,19 @@
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(73, 130, 163, 0.9); */
+    background-color: #23a6cd;
+    transition: all .5s;
+}
+

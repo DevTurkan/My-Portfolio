@@ -1,0 +1,1429 @@
+.contact_common{
+padding-top: 90px;
+box-sizing: border-box;
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: rgb(53, 55, 66);
+/* background-color: red; */
+}
+
+.contact_container{
+width: 80%;
+/* background-color: aquamarine; */
+}
+.contact_line{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+}
+.circle{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: rgb(127, 161, 236);
+}
+
+.line{
+height: 5px;
+width: 86%;
+border-radius: 10px;
+background-color: rgb(127, 161, 236);
+}
+
+.contact_line h2{
+color:rgb(162, 211, 250);
+}
+
+/* ------------------------------ */
+
+.contactcallsend{
+display: flex;
+justify-content: space-around;
+width: 100%;
+
+margin-bottom: 30px;
+/* background-color: red; */
+}
+
+.call{
+width: 35%;
+padding-left: 15px;
+padding-right: 15px;
+/* background-color: rgb(174, 174, 182); */
+box-sizing: border-box;
+}
+
+.sendme{
+width: 65%;
+padding-left: 15px;
+padding-right: 15px;
+box-sizing: border-box;
+/* padding-bottom: 200px; */
+/* background-color: blueviolet; */
+}
+
+.shy{
+    color: whitesmoke;
+    opacity: .9;
+    padding-bottom: 10px;
+}
+
+.shyp{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contacticons{
+    display: flex;
+    justify-content: left;
+}
+.icna{
+    color: rgb(61, 116, 236)!important;
+}
+
+.icna2{
+    color: white!important;
+}
+.contactp{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    font-family: Open Sans,sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #f3f3f5;
+
+}
+.contactp span{
+    font-weight: 500;
+    opacity: .6;
+    color: #e2e2ef;
+}
+.iconss{
+font-size: 33px;
+/* color:rgb(44, 96, 131); */
+cursor: pointer;
+color: rgb(108 146 171);
+}
+
+.contacticons ul li{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.lasticon{
+    width: 50%;
+    margin-top: 20px;
+    /* margin-bottom: 100px; */
+}
+
+.lasticon ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.gli{
+    font-size: 40px;
+   
+    /* background-color: rgb(90, 90, 83);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    transition: all .5s;
+}
+
+.lasticon ul li a {
+    color: rgb(124 164 225);
+
+    
+}
+
+.lasticon ul li:hover a{
+    color: rgb(77, 114, 233);
+
+}
+    
+
+
+
+
+
+
+.namemail{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 15px;
+}
+
+.name{
+width: 50%;
+margin-right: 20px;
+box-sizing: border-box;
+}
+
+.mail{
+    width: 50%;
+}
+
+.name, .mail, .subj, .message{
+    /* width: 352px; */
+    height: 48px;
+    padding: 11px 26px;
+    border: 3px solid rgb(110 111 112);
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: rgb(62 62 64);
+    color: white;
+}
+.subj{
+width: 100%;
+margin-bottom: 15px;
+}
+
+.message{
+    
+    height: 200px;
+    width: 100%;    
+
+/* max-width: 100%;
+min-width: 100%;
+min-height: 48px; */
+}
+
+input::placeholder{
+    color:rgb(126, 125, 125);
+    font-weight: 700;
+}
+textarea::placeholder{
+    color:rgb(126, 125, 125);
+    font-weight: 700;
+    font-size: 16px;
+}
+input:focus, textarea:focus{
+    outline-color: rgb(61, 116, 236);
+}
+
+/* .contactformm div{
+    margin-bottom: 30px;
+} */
+
+
+.contactformm button{
+display: flex;
+justify-content:space-around;
+align-items: center;
+margin-top: 20px;
+/* margin-top: 30px; */
+padding: 4px;
+border: 3px solid rgb(127, 161, 236);
+color: rgb(127, 161, 236);
+font-weight: 700;
+font-size: 16px;
+border-radius: 30px;
+background-color: transparent;
+width: 170px;
+height: 50px;
+cursor: pointer;
+transition: all .3s;
+}
+
+.contactformm button:hover{
+    color: rgb(8, 26, 66);
+    background-color: rgba(173, 210, 252, 0.8);
+    border: 3px solid rgba(173, 210, 252, 0.2);
+}
+
+.contactformm button span:first-child{
+    font-size: 17px;
+}
+.contactformm button span:last-child{
+    font-size: 23px;
+    transform: translateY(3px);
+
+}
+
+
+.author{
+    width: 100%;
+    margin: 35px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author p{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(225, 226, 228);
+    font-family: 'Poppins-SemiBold';
+}
+
+/* RESPONSIVLIK */
+@media screen and (min-width: 280px) and (max-width: 299px){
+    .namemail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .name{
+        width: 100%;
+        margin: 0 0 15px;
+        box-sizing: border-box;
+    }
+        
+    .mail{
+        width: 100%;
+    }
+    .shyp{
+        margin-bottom: 23px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 52%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 23px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 14px;
+       padding-left: 12px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 12%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 319px){
+    .namemail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .name{
+        width: 100%;
+        margin: 0 0 15px;
+        box-sizing: border-box;
+    }
+        
+    .mail{
+        width: 100%;
+    }
+    .shyp{
+        margin-bottom: 23px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 52%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 15px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 25%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 355px){
+    .namemail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .name{
+        width: 100%;
+        margin: 0 0 15px;
+        box-sizing: border-box;
+    }
+        
+    .mail{
+        width: 100%;
+    }
+    .shyp{
+        margin-bottom: 23px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 60%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 35%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 356px) and (max-width: 399px){
+    /* input::placeholder{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    textarea::placeholder{
+        font-weight: 600;
+        font-size: 12px;
+    } */
+
+    .namemail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .name{
+        width: 100%;
+        margin: 0 0 15px;
+        box-sizing: border-box;
+    }
+        
+    .mail{
+        width: 100%;
+    }
+    .shyp{
+        margin-bottom: 23px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 65%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 40%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 429px){
+    .namemail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .name{
+        width: 100%;
+        margin: 0 0 15px;
+        box-sizing: border-box;
+    }
+        
+    .mail{
+        width: 100%;
+    }
+    .shyp{
+        margin-bottom: 23px;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 65%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 39%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 47%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 430px) and (max-width: 466px){
+    .namemail{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .name{
+        width: 100%;
+        margin: 0 0 15px;
+        box-sizing: border-box;
+    }
+        
+    .mail{
+        width: 100%;
+    }
+
+    .shyp{
+        margin-bottom: 23px;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 68%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 39%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 54%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 467px) and (max-width: 489px){
+    .shyp{
+        margin-bottom: 23px;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 70%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 39%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 57%;
+        font-weight: 600;
+    }
+    .author p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 490px) and (max-width: 599px){
+    .shyp{
+        margin-bottom: 23px;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 72%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        margin-top: 8px;     
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        display: flex;
+        justify-content: left;
+    }
+    .lasticon ul{
+        width: 39%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 58%;
+    }
+    .author p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 699px){
+    .shyp{
+        margin-bottom: 23px;
+    }
+    .contact_container{
+        width: 90%;
+    }
+    .line{
+        max-width: 78%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        width: 100%;
+        position: absolute;
+        top: 34%;
+        right: 0%;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+    }
+    .lasticon ul{
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 66%;
+    }
+    .author p{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 799px){
+    .line{
+        max-width: 78%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 500;
+    }
+    .lasticon{
+        width: 100%;
+        position: absolute;
+        top: 34%;
+        right: 0%;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+    }
+    .lasticon ul{
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 67%;
+    }
+    .author p{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 899px){
+    .line{
+        max-width: 82%;
+    }
+    .contact_line h2{
+        font-size: 16px;
+    }
+    .call{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons{
+        display: flex;
+        justify-content: left;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul li a span{
+        font-size: 28px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 0;
+    }
+    .contacticons ul li p{
+       font-size: 16px;
+       padding-left: 15px;
+       font-weight: 600;
+    }
+    .lasticon{
+        width: 100%;
+        position: absolute;
+        top: 34%;
+        right: 0%;
+        display: flex;
+        justify-content: right;
+        margin: 0;
+    }
+    .lasticon ul{
+        width: 30%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gli{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 72%;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 999px){
+    .line{
+        max-width: 84%;
+    }
+    .contact_line h2{
+        font-size: 18px;
+    }
+    .call{
+        width: 100%;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .contacticons ul li a span{
+        font-size: 25px;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 20px;
+    }
+    .contacticons ul li p{
+       font-size: 13px;
+       padding-left: 15px;
+    }
+    .lasticon{
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .lasticon ul{
+        width: 30%;
+    }
+    .gli{
+        font-size: 30px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 75%;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1029px){
+    .line{
+        max-width: 84%;
+    }
+    .contact_line h2{
+        font-size: 20px;
+    }
+    .call{
+        width: 100%;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 20px;
+    }
+    .contacticons ul li p{
+       font-size: 14px;
+    }
+    .lasticon{
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .lasticon ul{
+        width: 30%;
+    }
+    .gli{
+        font-size: 30px;
+    }
+    .contactformm button{
+        position: relative;
+        left: 77%;
+    }
+}
+@media screen and (min-width: 1030px) and (max-width: 1059px){
+    .contactformm button{
+        position: relative;
+        left: 77%;
+    }
+    .line{
+        max-width: 84%;
+    }
+    .contact_line h2{
+        font-size: 20px;
+    }
+    .call{
+        width: 100%;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 25px;
+    }
+    .contacticons ul li p{
+       font-size: 14px;
+    }
+    .lasticon{
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .lasticon ul{
+        width: 30%;
+    }
+    .gli{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1060px) and (max-width: 1089px){
+    .contactformm button{
+        position: relative;
+        left: 77%;
+    }
+    .line{
+        max-width: 82%;
+    }
+    .call{
+        width: 100%;
+    }
+    .sendme{
+        width: 100%;
+    }
+    .contactcallsend{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacticons ul{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .contacticons ul li:not(:last-child){
+        margin-right: 20px;
+    }
+    .contacticons ul li p{
+       font-size: 14px;
+    }
+    .lasticon{
+        width: 100%;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .lasticon ul{
+        width: 30%;
+    }
+    .gli{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1090px) and (max-width: 1144px){
+    .line{
+        max-width: 84%;
+    }
+    .call{
+        width: 40%;
+    }
+    
+    .sendme{
+        width: 60%;
+    }
+    .gli{
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 1145px) and (max-width: 1165px){
+    .line{
+        max-width: 84%;
+    }
+    .call{
+        width: 40%;
+    }
+    
+    .sendme{
+        width: 60%;
+    }
+    .gli{
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 1166px) and (max-width: 1196px){
+    .line{
+        max-width: 84%;
+    }
+    .call{
+        width: 40%;
+    }
+    
+    .sendme{
+        width: 60%;
+    }
+    .gli{
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 1197px) and (max-width: 1230px){
+    .line{
+        max-width: 84%;
+    }
+}

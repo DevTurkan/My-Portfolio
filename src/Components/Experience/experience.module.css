@@ -1,0 +1,805 @@
+.exp_common{
+padding-top: 90px;
+box-sizing: border-box;
+width: 100%;
+display: flex;
+justify-content: center;
+background-color: rgb(53, 55, 66);
+/* background-color: red; */
+}
+
+.exp_container{
+width: 80%;
+/* background-color: aquamarine; */
+}
+.exp_line{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+}
+.circle{
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: rgb(127, 161, 236);
+}
+
+.line{
+height: 5px;
+width: 83%;
+border-radius: 10px;
+background-color: rgb(127, 161, 236);
+}
+
+.exp_line h2{
+color:rgb(162, 211, 250);
+}
+
+
+
+.exp_education{
+    width: 100%;
+}
+
+.exp_education h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(223, 222, 222);
+    margin-bottom: 50px;
+}
+
+.education_common{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.education1{
+width: 50%;
+padding: 33px 20px;
+box-sizing: border-box;
+background-color: rgb(44, 96, 131);
+border-radius: 20px;
+display: flex;
+/* margin-bottom: 30px; */
+margin-right: 30px;
+}
+
+.education2{
+width: 50%;
+padding: 33px 20px;
+box-sizing: border-box;
+background-color: rgb(44, 96, 131);
+border-radius: 20px;
+display: flex;
+/* margin-bottom: 30px; */
+}
+
+.education1:hover, .education2:hover{
+    background-color: rgb(15 107 167);
+}
+
+.schoolicon{
+font-size: 35px;
+background-color: rgb(111 188 233);
+height: 57px;
+width: 57px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+}
+
+.education_text{
+    margin-left: 10px;
+}
+
+.education_text h6{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: rgb(111 188 233);
+}
+
+.education_text h4{
+    font-size: 19px;
+    font-weight: 600;
+    /* margin-bottom: 8px; */
+    color: rgb(234, 234, 234);
+}
+
+.education_text h5{
+    font-size: 18px;
+    font-weight: 600;
+    /* margin-bottom: 8px; */
+    color: rgb(234, 234, 234, .8);
+}
+
+
+/* ------------------------------------------------ */ 
+.exp_skills{
+    width: 100%;
+}
+
+.exp_skills h1{
+    margin: 40px 0 40px;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(223, 222, 222);
+}
+
+.skills_common{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+
+/* RESPONSIVLIK */
+@media screen and (min-width: 280px) and (max-width: 324px){
+    /* .schoolicon{
+        font-size: 30px;
+        height: 48px;
+        width: 48px;
+    } */
+    .exp_container{
+        width: 90%;
+    }
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education1 .schoolicon{
+        font-size: 22px;
+        height: 33px;
+        width: 55px;
+    }
+    .education2 .schoolicon{
+        font-size: 22px;
+        height: 33px;
+        width: 33px;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 50%;
+    }
+    .exp_education h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+    .exp_skills h1{
+        font-size: 25px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 14px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    .education_text h5{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (min-width: 325px) and (max-width: 399px){
+     .education1 .schoolicon{
+        font-size: 22px;
+        height: 36px;
+        width: 49px;
+    }
+    .education2 .schoolicon{
+        font-size: 22px;
+        height: 36px;
+        width: 36px;
+    }
+    /* .schoolicon{
+        font-size: 30px;
+        height: 48px;
+        width: 48px;
+    } */
+    .exp_container{
+        width: 90%;
+    }
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 57%;
+    }
+    .exp_education h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+    .exp_skills h1{
+        font-size: 25px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 14px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    .education_text h5{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (min-width: 400px) and (max-width: 449px){
+    .education1 .schoolicon{
+        font-size: 30px;
+        height: 48px;
+        width: 58px;
+    }
+    .education2 .schoolicon{
+        font-size: 30px;
+        height: 48px;
+        width: 48px;
+    }
+
+    .exp_container{
+        width: 90%;
+    }
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 64%;
+    }
+    .exp_education h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+    .exp_skills h1{
+        font-size: 25px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 14px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    .education_text h5{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (min-width: 450px) and (max-width: 499px){
+    .schoolicon{
+        font-size: 30px;
+        height: 48px;
+        width: 48px;
+    }
+    .exp_container{
+        width: 90%;
+    }
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 64%;
+    }
+    .exp_education h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+    .exp_skills h1{
+        font-size: 25px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 14px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    .education_text h5{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (min-width: 500px) and (max-width: 599px){
+    .schoolicon{
+        font-size: 30px;
+        height: 48px;
+        width: 48px;
+    }
+    .exp_container{
+        width: 90%;
+    }
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 72%;
+    }
+    .exp_education h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+
+    }
+    .exp_skills h1{
+        font-size: 25px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 14px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    .education_text h5{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 699px){
+    .exp_container{
+        width: 90%;
+    }
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 76%;
+    }
+    .exp_education h1{
+        font-size: 28px;
+    }
+    .exp_skills h1{
+        font-size: 28px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 16px;
+    }
+    .education_text h4{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width: 700px) and (max-width: 799px){
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 76%;
+    }
+    .exp_education h1{
+        font-size: 28px;
+    }
+    .exp_skills h1{
+        font-size: 28px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 16px;
+    }
+    .education_text h4{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width: 800px) and (max-width: 899px){
+    .education_common{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .education1{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 24px 13px;
+    }
+    .education2{
+        width: 100%;
+        margin-right: 0;
+        padding: 24px 13px;
+    }
+    .schoolicon{
+        position: static;
+    }
+    .education_text{
+        margin-left: 16px;
+        margin-top: 0;
+    }
+    .exp_line h2{
+        font-size: 16px;
+    }
+    .line{
+        max-width: 79%;
+    }
+    .exp_education h1{
+        font-size: 28px;
+    }
+    .exp_skills h1{
+        font-size: 28px;
+        margin: 40px 0 4px;
+    }
+    .education_text h6{
+        font-size: 16px;
+    }
+    .education_text h4{
+        font-size: 21px;
+    }
+    
+}
+@media screen and (min-width: 900px) and (max-width: 999px){
+    .education1, .education2{
+        padding: 24px 10px;
+        position: relative;
+    }
+    .education1{
+        width: 57%;
+    }
+    .schoolicon{
+        position: absolute; 
+        top: -19px; 
+        left: -8px;
+    }
+    .education_text{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .exp_line h2{
+        font-size: 18px;
+    }
+    .line{
+        max-width: 80%;
+    }
+    .exp_education h1{
+        font-size: 30px;
+    }
+    .exp_skills h1{
+        font-size: 30px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    .exp_skills h1{
+        margin: 40px 0 4px;
+    }
+    
+}
+@media screen and (min-width: 1000px) and (max-width: 1029px){
+    .education1, .education2{
+        padding: 24px 19px;
+        position: relative;
+    }
+    .schoolicon{
+        position: absolute; 
+        top: -19px; 
+        left: -8px;
+    }
+    .education_text{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .exp_line h2{
+        font-size: 20px;
+    }
+    .line{
+        max-width: 81%;
+    }
+    .exp_education h1{
+        font-size: 34px;
+    }
+    .exp_skills h1{
+        font-size: 34px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1030px) and (max-width: 1059px){
+    .education1, .education2{
+        padding: 24px 20px;
+        position: relative;
+    }
+    .schoolicon{
+        position: absolute; 
+        top: -19px; 
+        left: -8px;
+    }
+    .education_text{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .exp_line h2{
+        font-size: 20px;
+    }
+    .line{
+        max-width: 81%;
+    }
+    .exp_education h1{
+        font-size: 34px;
+    }
+    .exp_skills h1{
+        font-size: 34px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1060px) and (max-width: 1089px){
+    .education1, .education2{
+        padding: 24px 20px;
+        position: relative;
+    }
+    .schoolicon{
+        position: absolute; 
+        top: -19px; 
+        left: -8px;
+    }
+    .education_text{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    /* ---------------------- */
+    .line{
+        max-width: 79%;
+    }
+    .exp_education h1{
+        font-size: 36px;
+    }
+    .exp_skills h1{
+        font-size: 36px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1090px) and (max-width: 1144px){
+    .education1, .education2{
+        padding: 24px 20px;
+        position: relative;
+    }
+    .schoolicon{
+        position: absolute; 
+        top: -19px; 
+        left: -8px;
+    }
+    .education_text{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    /* ---------------------- */
+    .line{
+        max-width: 80%;
+    }
+    .exp_education h1{
+        font-size: 38px;
+    }
+    .exp_skills h1{
+        font-size: 38px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1145px) and (max-width: 1165px){
+    .line{
+        max-width: 81%;
+    }
+    .exp_education h1{
+        font-size: 38px;
+    }
+    .exp_skills h1{
+        font-size: 38px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1166px) and (max-width: 1196px){
+    .line{
+        max-width: 81%;
+    }
+    .exp_education h1{
+        font-size: 38px;
+    }
+    .exp_skills h1{
+        font-size: 38px;
+    }
+    .education_text h4{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1197px) and (max-width: 1230px){
+    .line{
+        max-width: 81%;
+    }
+    .exp_education h1{
+        font-size: 38px;
+    }
+    .exp_skills h1{
+        font-size: 38px;
+    }
+    .education_text h4{
+        font-size: 17px;
+    }
+    
+}
