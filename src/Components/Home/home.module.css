@@ -1,0 +1,883 @@
+.common{
+width: 100%;
+height: calc(100vh - 70px);
+display: flex;
+position: relative;
+}
+
+.left{
+width: 35%;
+height: 100%;
+background-color: rgb(127, 161, 236);
+display: flex;
+justify-content: center;
+align-items: end;
+}
+
+.left p{
+    font-family: 'Freehand-Regular';
+    font-size: 32px;
+    position: absolute;
+    top: 25px;
+    left: 31px;
+}
+
+.photo{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+    transform: translate(-50%,-50%);
+    left: 35%;
+    top: 45%;
+}
+
+.icon_ul {
+display: flex;
+justify-content:space-around;
+align-items: flex-end;
+width: 100%;
+padding: 0 80px 40px;
+box-sizing: border-box;
+}
+
+.icon_ul li a ion-icon{
+    appearance: none;
+    color: rgb(5, 19, 51);
+    font-size: 30px;
+
+}
+
+/* ------Right------------- */
+
+.right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 36, 46);
+    /* background-color: rgb(33, 33, 33); */
+}
+
+.right_inner{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.text_div{
+    width: 50%;
+    margin-right: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: brown; */
+}
+
+.text_div h1{
+    font-weight: 700;
+    font-size: 40px;
+
+    color: rgb(234, 234, 234);
+}
+
+.text_div h3{
+    font-size: 27px;
+    line-height: 110%;
+    margin: 16px 0;
+    color: rgb(192, 199, 212);
+
+}
+
+.text_div p{
+    /* font-family: 'Freehand-Regular'; */
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(234, 234, 234);
+    opacity: .7;
+}
+.text_div a{
+    text-decoration: none;
+}
+.text_div a button{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+border: 3px solid rgb(127, 161, 236);
+color: rgb(127, 161, 236);
+font-weight: 700;
+font-size: 16px;
+border-radius: 30px;
+background-color: transparent;
+width: 165px;
+height: 49px;
+transition: all .3s;
+cursor: pointer;
+}
+
+.text_div a button:hover{
+    /* color: #3a5475; */
+    /* color:rgb(5, 19, 51); */
+    color: rgb(8, 26, 66);
+    background-color: rgba(173, 210, 252, 0.8);
+    border: 3px solid rgba(173, 210, 252, 0.2);
+    /* border: 3px solid #eaeaea; */
+    /* background-color: #eaeaea; */
+}
+
+
+
+/* RESPONSIVLIK */
+@media screen and (min-width: 280px) and (max-width: 359px){
+    .common{
+        display: flex;
+        flex-direction: column;
+
+        max-height: 1000px;
+        min-height: 500px;
+        height: 91vh;
+    }
+    .photo{
+        width: 150px;
+        height: 150px;
+        left: 50%;
+        top: 20%;
+    }
+    .left{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
+    }
+    .right{
+        width: 100%;
+        height: 60%;
+    }
+    .right_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        font-size: 15px;
+        top: 7px;
+        left: 12px;
+    }
+    .icon_ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 13%;
+        height: 100%
+    }
+    .icon_ul li:not(:last-child){
+        margin-bottom: 7px;
+    }
+     .icon_ul li a ion-icon{
+        font-size: 20px;
+    }
+    .text_div{
+        margin-right: 0;
+        width: 80%;
+        margin-top: 0;
+    }
+    .text_div h1{
+        font-size: 23px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_div h3{
+        font-size: 17px;
+        font-weight: 600;
+        text-align: center;
+        margin: 7px 0;
+    }
+    .text_div p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_div a button{
+        font-size: 13px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 146px;
+        height: 38px;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 407px){
+    .common{
+        display: flex;
+        flex-direction: column;
+
+        max-height: 1000px;
+        min-height: 500px;
+        height: 91vh;
+    }
+    .photo{
+        /* width: 150px;
+        height: 150px; */
+        width: 130px;
+        height: 130px;
+        left: 50%;
+        top: 20%;
+    }
+    .left{
+        width: 100%;
+        /* height: 40%; */
+        height: 22%;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
+    }
+    .right{
+        width: 100%;
+        /* height: 60%; */
+        height: 78%;
+    }
+    .right_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        font-size: 15px;
+        top: 7px;
+        left: 12px;
+    }
+    .icon_ul {
+        padding: 0;
+        display: flex;
+        /* flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+        /* width: 13%;
+        height: 100%; */
+        align-items: self-start;
+        justify-content: space-evenly;
+        width: 22%;
+        height: 100%;
+    }
+    .icon_ul li:not(:last-child){
+        /* margin-bottom: 7px; */
+        margin-bottom: 0px;
+
+    }
+     .icon_ul li a ion-icon{
+        /* font-size: 20px; */
+        font-size: 12px;
+    }
+    .text_div{
+        margin-right: 0;
+        width: 80%;
+        margin-top: 0;
+
+    }
+    .text_div h1{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_div h3{
+        font-size: 19px;
+        font-weight: 600;
+        text-align: center;
+        margin: 7px 0;
+    }
+    .text_div p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_div a button{
+        font-size: 13px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 146px;
+        height: 38px;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width: 408px) and (max-width: 459px){
+    .common{
+        display: flex;
+        flex-direction: column;
+
+        max-height: 1000px;
+        min-height: 500px;
+        height: 91vh;
+    }
+    .photo{
+        width: 160px;
+        height: 160px;
+        left: 50%;
+        top: 27%;
+    }
+    .left{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
+    }
+    .right{
+        width: 100%;
+        height: 70%;
+    }
+    .right_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        font-size: 22px;
+        top: 10px;
+        left: 20px;
+    }
+    .icon_ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 13%;
+        height: 100%
+    }
+    .icon_ul li:not(:last-child){
+        margin-bottom: 7px;
+    }
+     .icon_ul li a ion-icon{
+        font-size: 20px;
+    }
+    .text_div{
+        margin-right: 0;
+        width: 80%;
+        margin-top: 35px;
+    }
+    .text_div h1{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_div h3{
+        font-size: 19px;
+        font-weight: 600;
+        text-align: center;
+        margin: 7px 0;
+    }
+    .text_div p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_div a button{
+        font-size: 13px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 146px;
+        height: 38px;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width: 460px) and (max-width: 499px){
+    .common{
+        display: flex;
+        flex-direction: column;
+
+        max-height: 1000px;
+        min-height: 500px;
+        height: 91vh;
+    }
+    .photo{
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 27%;
+    }
+    .left{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
+    }
+    .right{
+        width: 100%;
+        height: 70%;
+    }
+    .right_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        font-size: 22px;
+        top: 10px;
+        left: 20px;
+    }
+    .icon_ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 13%;
+        height: 100%
+    }
+    .icon_ul li:not(:last-child){
+        margin-bottom: 7px;
+    }
+     .icon_ul li a ion-icon{
+        font-size: 20px;
+    }
+    .text_div{
+        margin-right: 0;
+        width: 80%;
+        margin-top: 50px;
+    }
+    .text_div h1{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_div h3{
+        font-size: 19px;
+        font-weight: 600;
+        text-align: center;
+        margin: 7px 0;
+    }
+    .text_div p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_div a button{
+        font-size: 13px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 146px;
+        height: 38px;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 699px){
+    .common{
+        display: flex;
+        flex-direction: column;
+
+        max-height: 1000px;
+        min-height: 500px;
+        height: 91vh;
+    }
+    .photo{
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 27%;
+    }
+    .left{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
+    }
+    .right{
+        width: 100%;
+        height: 70%;
+    }
+    .right_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        font-size: 22px;
+        top: 10px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 13%;
+        height: 100%
+    }
+    .icon_ul li:not(:last-child){
+        margin-bottom: 7px;
+    }
+     .icon_ul li a ion-icon{
+        font-size: 20px;
+    }
+    .text_div{
+        margin-right: 0;
+        width: 80%;
+        /* margin-top: 73px; */
+        margin-top: 55px;
+    }
+    .text_div h1{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_div h3{
+        font-size: 19px;
+        font-weight: 600;
+        text-align: center;
+        margin: 7px 0;
+    }
+    .text_div p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_div a button{
+        font-size: 13px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 146px;
+        height: 38px;
+        margin-top: 16px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 899px){
+    .common{
+        display: flex;
+        flex-direction: column;
+
+        max-height: 1000px;
+        min-height: 500px;
+        height: 91vh;
+    }
+    .photo{
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 27%;
+    }
+    .left{
+        width: 100%;
+        /* height: 32%; */
+        height: 27%;
+        display: flex;
+        justify-content: end;
+        align-items:flex-start;
+    }
+    .right{
+        width: 100%;
+        /* height: 68%; */
+        height: 73%;
+    }
+    .right_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        font-size: 22px;
+        top: 10px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 13%;
+        height: 100%
+    }
+    .icon_ul li:not(:last-child){
+        margin-bottom: 7px;
+    }
+     .icon_ul li a ion-icon{
+        font-size: 20px;
+    }
+    .text_div{
+        margin-right: 0;
+        width: 70%;
+        /* margin-top: 73px; */
+        margin-top: 55px;
+    }
+    .text_div h1{
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text_div h3{
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin: 7px 0;
+    }
+    .text_div p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .text_div a button{
+        font-size: 13px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 146px;
+        height: 40px;
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1029px){
+    .photo{
+        width: 300px;
+        height: 300px;
+        left: 25%;
+        top: 50%;
+    }
+    .left{
+        width: 25%;
+    }
+    .right{
+        width: 75%;
+    }
+    .left p{
+        font-size: 25px;
+        top: 20px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0 50px 25px;
+    }
+    
+    .icon_ul li a ion-icon{
+        font-size: 25px;
+    }
+    .text_div{
+        width: 63%;
+        margin-right: 66px;
+    }
+    .text_div h1{
+        font-size: 38px;
+        font-weight: 700;
+    }
+    .text_div h3{
+        font-size: 25px;    
+        font-weight: 500;
+    }
+    .text_div p{
+        font-size: 19px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 150px;
+    }
+}
+@media screen and (min-width: 1030px) and (max-width: 1059px){
+    .photo{
+        width: 350px;
+        height: 350px;
+        left: 30%;
+        top: 50%;
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+    .left p{
+        font-size: 30px;
+        top: 20px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0 68px 25px;
+    }
+    
+    .icon_ul li a ion-icon{
+        font-size: 28px;
+    }
+    .text_div h1{
+        font-size: 36px;
+    }
+    .text_div h3{
+        font-size: 23px;    
+    }
+    .text_div p{
+        font-size: 17px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 150px;
+    }
+}
+@media screen and (min-width: 1060px) and (max-width: 1089px){
+    .photo{
+        width: 350px;
+        height: 350px;
+        left: 30%;
+        top: 50%;
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+    .left p{
+        font-size: 30px;
+        top: 20px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0 68px 25px;
+    }
+    
+    .icon_ul li a ion-icon{
+        font-size: 28px;
+    }
+    .text_div h1{
+        font-size: 36px;
+    }
+    .text_div h3{
+        font-size: 23px;    
+    }
+    .text_div p{
+        font-size: 17px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 150px;
+    }
+}
+@media screen and (min-width: 1090px) and (max-width: 1144px){
+    .photo{
+        width: 350px;
+        height: 350px;
+        left: 30%;
+        top: 50%;
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+    .left p{
+        font-size: 30px;
+        top: 20px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0 68px 25px;
+    }
+    
+    .icon_ul li a ion-icon{
+        font-size: 28px;
+    }
+    .text_div h1{
+        font-size: 38px;
+    }
+    .text_div h3{
+        font-size: 25px;    
+    }
+    .text_div p{
+        font-size: 18px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 155px;
+    }
+}
+@media screen and (min-width: 1145px) and (max-width: 1165px){
+    .photo{
+        width: 350px;
+        height: 350px;
+        left: 30%;
+        top: 50%;
+    }
+    .left{
+        width: 30%;
+    }
+    .right{
+        width: 70%;
+    }
+    .left p{
+        font-size: 30px;
+        top: 20px;
+        left: 35px;
+    }
+    .icon_ul {
+        padding: 0 68px 25px;
+    }
+    
+    .icon_ul li a ion-icon{
+        font-size: 28px;
+    }
+    .text_div h1{
+        font-size: 38px;
+    }
+    .text_div h3{
+        font-size: 25px;    
+    }
+    .text_div p{
+        font-size: 18px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 155px;
+    }
+}
+@media screen and (min-width: 1166px) and (max-width: 1196px){
+    .photo{
+        width: 380px;
+        height: 380px;
+    }
+    .text_div h1{
+        font-size: 38px;
+    }
+    .text_div h3{
+        font-size: 25px;    
+    }
+    .text_div p{
+        font-size: 18px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 155px;
+    }
+}
+@media screen and (min-width: 1197px) and (max-width: 1230px){
+    .text_div h1{
+        font-size: 38px;
+    }
+    .text_div h3{
+        font-size: 25px;    
+    }
+    .text_div p{
+        font-size: 18px;
+    }
+    .text_div a button{
+    font-size: 14px;
+    max-width: 155px;
+    }
+}
+
+
+
+
+
+
+
+
